@@ -1,18 +1,17 @@
 "use client";
 import React, { useState } from 'react';
 
-
 export default function Turn2LawSummary() {
-  const [openItem, setOpenItem] = useState(null);
+  const [openItem, setOpenItem] = useState<string | null>(null);
 
-  const toggleItem = (item) => {
+  const toggleItem = (item: string) => {
     setOpenItem(openItem === item ? null : item);
   };
 
   return (
     <div className="container mx-auto p-4 space-y-6">
       <header className="text-center mb-8 text-4xl font-semibold">
-     Know about us.
+        Know about us.
       </header>
 
       <div className="accordion w-full">
@@ -30,7 +29,7 @@ export default function Turn2LawSummary() {
           >
             <div className="p-4">
               <p className="mb-2"><strong>Definition:</strong> On-demand access to legal services, advice, and resources, anytime, anywhere.</p>
-              <p><strong>Why It's Needed:</strong></p>
+              <p><strong>Why It&apos;s Needed:</strong></p>
               <ul className="list-disc pl-5">
                 <li>High costs of traditional legal services</li>
                 <li>Delays and geographic limitations</li>
@@ -103,7 +102,6 @@ export default function Turn2LawSummary() {
           </div>
         </div>
 
-
         <div className="accordion-item border-b border-border">
           <button
             className="accordion-trigger w-full text-left py-4 px-2 text-lg font-semibold text-primary hover:bg-gray-100 transition-colors duration-300"
@@ -161,28 +159,6 @@ export default function Turn2LawSummary() {
             </div>
           </div>
         </div>
-
-        {/* <div className="accordion-item border-b border-border">
-          <button
-            className="accordion-trigger w-full text-left py-4 px-2 text-lg font-semibold text-primary hover:bg-gray-100 transition-colors duration-300"
-            onClick={() => toggleItem('challenges')}
-          >
-            Challenges
-          </button>
-          <div
-            className={`accordion-content overflow-hidden transition-max-height duration-500 ease-in-out ${
-              openItem === 'challenges' ? 'max-h-screen' : 'max-h-0'
-            }`}
-          >
-            <div className="p-4">
-              <ul className="list-disc pl-5">
-                <li><strong>Data Accuracy:</strong> Keeping lawyer profiles up-to-date</li>
-                <li><strong>AI Accuracy:</strong> Ensuring reliable legal guidance</li>
-                <li><strong>Scalability:</strong> Building a robust system from scratch</li>
-              </ul>
-            </div>
-          </div>
-        </div> */}
 
         <div className="accordion-item border-b border-border">
           <button

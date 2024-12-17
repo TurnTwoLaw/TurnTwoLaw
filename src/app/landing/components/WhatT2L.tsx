@@ -8,7 +8,7 @@ const WhatIsTurn2Law = () => {
       {/* Left Section - Content */}
       <div className="max-w-lg">
         <h2 className="text-3xl md:text-4xl font-extrabold mb-4">
-          What’s <span className="text-yellow-500 italic underline">Turn2Law</span> ?
+          What’s <span className="text-primary italic underline">Turn2Law</span> ?
         </h2>
         <p className="text-gray-700 leading-relaxed">
           Turn2Law is a next-generation legal platform designed to simplify access to legal 

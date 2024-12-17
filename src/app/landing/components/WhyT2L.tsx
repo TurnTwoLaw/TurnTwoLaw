@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const WhyTurn2Law: React.FC = () => {
   return (
@@ -6,16 +7,16 @@ const WhyTurn2Law: React.FC = () => {
       {/* Left Section */}
       <div className="w-full md:w-1/2">
         <h2 className="text-3xl font-bold text-black mb-6">
-          Why <span className="text-orange-500">Turn2Law</span>
+          Why <span className="text-primary">Turn2Law</span>
         </h2>
 
         {/* Features Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 bg-white rounded-xl shadow-md p-6">
           {/* Instant Legal Services */}
           <div className="flex flex-col items-start">
-            <div className="w-10 h-10 flex items-center justify-center rounded-full bg-green-100 mb-3">
-              <span className="text-green-600 text-xl">⏳</span>
-            </div>
+          
+              <Image src="/landing/instant.svg" width={40} height={40} alt="Instant Legal Services" />
+
             <h3 className="font-bold text-lg mb-2">Instant legal services</h3>
             <p className="text-gray-600 text-sm">
               Get agreements, contracts, NDAs, and other legal documents quickly
@@ -25,9 +26,9 @@ const WhyTurn2Law: React.FC = () => {
 
           {/* Lawyer Matching System */}
           <div className="flex flex-col items-start">
-            <div className="w-10 h-10 flex items-center justify-center rounded-full bg-green-100 mb-3">
-              <span className="text-green-600 text-xl">🎓</span>
-            </div>
+           
+              <Image src="/landing/lawyer.svg" width={40} height={40} alt="Lawyer Matching System" />
+        
             <h3 className="font-bold text-lg mb-2">Lawyer Matching System</h3>
             <p className="text-gray-600 text-sm">
               Connect with expert lawyers tailored to your specific legal needs
@@ -37,9 +38,9 @@ const WhyTurn2Law: React.FC = () => {
 
           {/* Affordable Subscriptions */}
           <div className="flex flex-col items-start">
-            <div className="w-10 h-10 flex items-center justify-center rounded-full bg-green-100 mb-3">
-              <span className="text-green-600 text-xl">💰</span>
-            </div>
+           
+              <Image src="/landing/affordable.svg" width={40} height={40} alt="Affordable Subscriptions" />
+         
             <h3 className="font-bold text-lg mb-2">Affordable subscriptions.</h3>
             <p className="text-gray-600 text-sm">
               Choose cost-effective plans for lawyers and clients with exclusive
@@ -49,9 +50,9 @@ const WhyTurn2Law: React.FC = () => {
 
           {/* Virtual Consulting */}
           <div className="flex flex-col items-start">
-            <div className="w-10 h-10 flex items-center justify-center rounded-full bg-green-100 mb-3">
-              <span className="text-green-600 text-xl">💻</span>
-            </div>
+            
+              <Image src="/landing/virtual.svg" width={40} height={40} alt="Virtual Consulting" />
+           
             <h3 className="font-bold text-lg mb-2">Virtual consulting.</h3>
             <p className="text-gray-600 text-sm">
               Access expert legal advice and consultations anytime, anywhere,
@@ -68,7 +69,7 @@ const WhyTurn2Law: React.FC = () => {
           <img
             src="/flag.svg"
             alt="Flag Design"
-            className="w-80 h-auto"
+            className="w-80 h-auto right-0 "
           />
         </div>
       </div>

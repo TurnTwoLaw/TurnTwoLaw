@@ -32,9 +32,9 @@ const LegalAccess = () => {
       </div>
 
       <div className="relative w-full px-6 md:px-12 mt-8">
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-4 bg-gray-100 p-6 rounded-lg shadow-lg">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-4  p-6 ">
           {items.map((item, index) => (
-            <div key={index} className="flex flex-col items-start text-left p-4 border rounded-md bg-white shadow">
+            <div key={index} className="flex flex-col items-start text-left p-4 py-8 border border-border rounded-2xl bg-gray-100 shadow-md">
               <img src={item.src} alt={item.alt} className="mb-2" />
               <p className="font-semibold text-gray-700">{item.text}</p>
             </div>
